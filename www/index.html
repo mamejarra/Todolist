@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <title>ToDoList</title>
+        <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="lib/jquery.min.js"></script>
+        <script src="lib/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+       <div data-role="page">
+            <div data-role="header">
+                <h1>Do It</h1>
+            </div>
+            <div role="main" class="ui-content">
+                <form>
+                    <label for="task">Ajouter une tache</label>
+                    <input type="text" id="task">
+                    <input type="button" value="Ajouter">
+                    <input type="button" value="Réinitialiser">
+                </form>
+                <!-- <ul id="tasklist" data-role="listview" data-inset="true">
+                </ul> -->
+                <input type="button" value="En cours">
+                <ul id="inProgress" data-role="listview" data-inset="true">
+                </ul>
+
+                <input type="button" value="Terminées">
+                <ul id="completed" data-role="listview" data-inset="true">
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>M2GLSI &copy; SOIR2025</h1>
+            </div>
+       </div> 
+    </body>
+</html>
